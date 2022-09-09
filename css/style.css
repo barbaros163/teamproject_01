@@ -1,0 +1,1000 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* part1 Melike */
+nav {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #4f6054;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+nav .hamburger {
+  cursor: pointer;
+}
+nav .hamburger .bar {
+  background-color: #fff;
+  width: 30px;
+  height: 3px;
+  margin-top: 5px;
+}
+nav .hamburger:hover .bar {
+  background-color: #ce272d;
+}
+.navbar {
+  position: fixed;
+  height: 100vh;
+  width: 300px;
+  color: #fff;
+  left: -100%;
+  top: 0;
+  bottom: 0;
+  font-size: 1.5em;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease-in-out;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  z-index: 1001;
+}
+.navbar.active {
+  left: 0;
+}
+.background-filter.active {
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease-in-out;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.navbar .close {
+  align-self: flex-end;
+  justify-self: flex-end;
+  cursor: pointer;
+}
+.navbar .close .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin-top: 5px;
+}
+.navbar .close .bar:nth-child(1) {
+  transform: translateY(4px) rotate(45deg);
+}
+.navbar .close .bar:nth-child(2) {
+  transform: translateY(-4px) rotate(-45deg);
+}
+.navbar li {
+  list-style: none;
+  margin-top: 10px;
+}
+.navbar li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+.navbar li a:hover {
+  color: #ffffffaf;
+}
+/* part1 Melike End */
+/*----------------------------------------------------------------*/
+/* /part 3 F4173-Yasin Start/ */
+.part3 {
+  height: 420px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../img/sdsdsd-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 300px;
+  padding-top: 50px;
+}
+.part3 h1 {
+  font-size: 4.5rem;
+  font-family: "Raleway", sans-serif;
+}
+.part3 .p1 {
+  font-size: 1.25rem;
+  font-family: "Open Sans", sans-serif;
+}
+.part3 h1,
+.p1 {
+  color: white;
+}
+.part3 .fa-credit-card {
+  border: 15px solid white;
+  border-radius: 50%;
+  color: #4f6054;
+  background-color: white;
+}
+.part3 .fa-solid {
+  border: 15px solid white;
+  border-radius: 50%;
+  color: #4f6054;
+  background-color: white;
+}
+.part3 .fa-regular,
+.fa-solid {
+  margin-bottom: 1rem;
+}
+.part3 .box-container {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  justify-content: space-around;
+}
+.part3 .box-container .box {
+  max-width: 270px;
+  height: 400px;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.part3 .box1 {
+  background-color: #bdb285;
+}
+
+.part3 .box2 {
+  background-color: #4f6054;
+}
+
+.part3 .box3 {
+  background-color: #bdb285;
+}
+
+.part3 .box4 {
+  background-color: #4f6054;
+}
+
+.part3 span {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.part3 .sp1 {
+  text-decoration-thickness: 2px;
+  text-decoration-color: #f0df9e;
+}
+
+.part3 .sp1:hover {
+  text-decoration-color: #4f6054;
+}
+
+.part3 span:hover {
+  text-decoration-color: #f0df9e;
+}
+
+.part3 p.paragraf {
+  text-justify: inherit;
+  text-align: center;
+  margin: 1rem;
+}
+/* /part 3 F4173-Yasin End/ */
+
+/* Part 4 Benefits  */
+.part4 {
+  width: 100%;
+  padding: 50px 0;
+  /* height: 100vh; */
+  background-color: #29332c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.part4 .svg-box {
+  width: 50vw;
+  height: 40vh;
+  position: relative;
+  top: 50px;
+  left: 10px;
+}
+.part4 .svg-box .svgImg {
+  object-fit: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 70%;
+  left: 50px;
+  z-index: 1;
+}
+.part4 .svg-box .svg {
+  position: absolute;
+}
+.part4 .benefits-section {
+  height: 90%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  min-width: 400px;
+}
+.part4 .benefits-article {
+  background-color: #fff;
+  color: #4f6054;
+  max-width: 555px;
+  height: 520px;
+  border-radius: 50px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.part4 .benefits-article .benefits-title {
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  color: #4f6054;
+  font-weight: 700;
+}
+.part4 .benefits-article .benefits-description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #111;
+}
+.part4 .benefits-article .benefits-button {
+  background-color: #bdb285;
+  padding: 15px 51px;
+  outline: none;
+  border: 0;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+.part4 .benefits-button:hover {
+  background-color: #29332c;
+  cursor: pointer;
+}
+/* Part 4 End  */
+
+/* /part 5 Our Teams/ */
+.part5 {
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+.part5 .üst {
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+}
+.part5 .üst .baslik {
+  font-size: 4.5rem;
+  font-weight: 700px;
+  font-family: "Raleway", sans-serif;
+}
+.part5 .üst p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 25.6px;
+}
+.our {
+  min-height: 750px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.our .who {
+  width: 450px;
+  height: 450px;
+  /* border: solid 1px red; */
+  margin-top: 40px;
+  border-radius: 25%;
+  padding: 3rem 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  line-height: 35.2px;
+}
+.our .who .ndr {
+  display: flex;
+  justify-content: center;
+  gap: 1rem 2rem;
+  font-size: 1.25rem;
+}
+.our img {
+  width: 110px;
+  border: 7px solid white;
+  border-radius: 50%;
+}
+.our .ceo {
+  background-color: #29332c;
+  color: #ffffff;
+}
+.our .director {
+  background-color: #bdb285;
+  color: #ffffff;
+}
+.our .Manager {
+  background-color: #4f6054;
+  color: #ffffff;
+}
+.part5 h3 {
+  font-size: 1rem;
+}
+/* part 5 end */
+/* Part 6 Network and Communications Sinan Sarikaya  */
+.part6 {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #29332c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.part6 .svg-box {
+  width: 40%;
+  height: 40vh;
+  position: relative;
+}
+.part6 .svg-box .svgImg {
+  object-fit: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 70%;
+  left: 50px;
+  z-index: 1;
+}
+.part6 .svg-box .svg {
+  position: absolute;
+}
+.part6 .svg-box .firstSvg {
+  fill: #4f6054;
+  width: 100%;
+  left: 100px;
+}
+.part6 .svg-box .secondSvg {
+  left: 0;
+  width: 90%;
+  fill: #bdb285;
+}
+.part6 .network-section {
+  width: 70%;
+  height: 100%;
+  z-index: 1;
+}
+.part6 .network-article {
+  background-color: #fff;
+  color: #4f6054;
+  max-width: 555px;
+  height: 520px;
+  border-radius: 50px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.part6 .network-article .network-title {
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  color: #4f6054;
+  font-weight: 700;
+}
+.part6 .network-article .network-description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #111;
+}
+.part6 .network-article .network-button {
+  background-color: #bdb285;
+  padding: 15px 51px;
+  outline: none;
+  border: 0;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 500;
+  align-self: flex-start;
+}
+/* Part 6 End  */
+
+/* Talha: Part 7 START */
+.part7 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+.part7 .container {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 4rem;
+  text-align: center;
+  /* margin-top: 4rem; */
+}
+.part7 .container .title {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  color: #4f6054;
+  height: 20%;
+  /* margin-bottom: 1rem; */
+}
+.part7 .container .boxes {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  height: 75%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.part7 .container .boxes .box {
+  height: 160px;
+  background-color: #4f6054;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  border-radius: 30px;
+  padding: 0.3rem;
+}
+.part7 .container .boxes .box .tick {
+  margin-top: 30px;
+  width: 10%;
+}
+.part7 .container .boxes .box .tick img {
+  width: 24px;
+}
+.part7 .container .boxes .box .text {
+  width: 90%;
+  font-size: 1rem;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+/* Talha: Part 7 END */
+/*PART 8 START*/
+.part8 {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #29332c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.part8 .svg-box {
+  width: 50vw;
+  height: 40vw;
+  position: relative;
+  top: 50px;
+}
+.part8 .svg-box .svgImg {
+  object-fit: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 70%;
+  left: 50px;
+  z-index: 1;
+}
+.part8 .svg-box .svg {
+  position: absolute;
+}
+.part8 .svg-box .firstSvg {
+  fill: #4f6054;
+  width: 100%;
+  left: 100px;
+}
+.part8 .svg-box .secondSvg {
+  left: 0;
+  width: 90%;
+  fill: #bdb285;
+}
+.part8 .network-section {
+  display: flex;
+  justify-content: end;
+  width: 70%;
+  height: 100%;
+  z-index: 1;
+}
+
+.part8 .network-article {
+  background-color: #fff;
+  color: #4f6054;
+  max-width: 555px;
+  height: 520px;
+  border-radius: 50px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.part8 .network-article .network-title {
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  color: #4f6054;
+  font-weight: 700;
+}
+.part8 .network-article .network-description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  /* padding: 2rem 0; */
+  color: #111;
+}
+
+.part8 .network-article .network-button {
+  background-color: #bdb285;
+  padding: 15px 51px;
+  outline: none;
+  border: 0;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 500;
+  align-self: flex-start;
+}
+/*PART 8 END*/
+
+/* mehmet: PART 9 START */
+.part9 {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  padding: 3rem 2rem 0;
+}
+.part9 .main {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.part9 .main .textWrapper {
+  display: flex;
+  font-size: 1.2rem;
+  gap: 2rem;
+}
+.part9 .main .textWrapper .icon {
+  font-size: 5rem;
+  color: rgba(182, 167, 83, 0.726);
+  animation: iconExpand 2s ease;
+  height: 30%;
+  margin-top: -2rem;
+}
+.part9 .main .textWrapper .paragraph {
+  animation: slideFromLeft-part9 3s ease, visibility 3s ease;
+  line-height: 1.9rem;
+}
+.part9 .main .textWrapper .paragraph a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid black;
+}
+.part9 .main .textWrapper .paragraph a:hover {
+  border-color: rgba(182, 167, 83, 0.726);
+}
+
+.part9 .main .smartPhonePic img {
+  width: 80%;
+}
+
+/* PART 9 END */
+/*Part 10 our success START*/
+.part10 {
+  width: 100%;
+}
+.part10 .main-container {
+  min-height: 80vh;
+  max-width: 100%;
+  background-image: url(../img/pexels-photo-4307641.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+}
+.part10 .main-container .text-wrapper {
+  max-width: 538px;
+  text-align: right;
+  font-family: "Open Sans", sans-serif;
+  margin-right: 20%;
+}
+/*Icon classname belongs <i> element too*/
+.part10 .main-container .text-wrapper .icon {
+  margin-top: 10%;
+  font-size: 5rem;
+  animation: iconExpand 2s ease;
+}
+.part10 .main-container .text-wrapper .text {
+  color: #fff;
+}
+.part10 .main-container .text-wrapper .text-1 {
+  font-size: 2rem;
+}
+.part10 .main-container .text-wrapper .text-2 {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+.part10 .main-container .text-wrapper .animated {
+  animation: slideFromLeft 2s ease, visibility 2s ease;
+}
+/* Mehmet: Part10 END */
+
+/*??? SPAGHETTI has been written :))*/
+
+/* Talha: Form part. The section before the footer. START */
+.catchword-form {
+  width: 100%;
+  padding: 5vh 0;
+}
+.catchword-form .container {
+  width: 70%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.catchword-form .container .box,
+.catchword-form .container .form-box {
+  padding: 1.5rem;
+}
+.catchword-form .container .form-box {
+  border-radius: 30px;
+  background-color: #4f6054;
+  color: #fff;
+}
+/* The following css block belongs to h3 heading. You can copy it. */
+.catchword-form .container .box .box-title {
+  font-size: 2.2rem;
+  font-family: "Raleway", sans-serif;
+  color: #4f6054;
+  font-weight: 700;
+}
+.catchword-form .container .box .box-text,
+.catchword-form .container .form-box form .label,
+.catchword-form .container .form-box form .submit-button button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+.catchword-form .container .box .box-text {
+  line-height: 1.6;
+  padding: 2rem 0;
+}
+.catchword-form .container .form-box .form-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  padding: 2rem 0;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+}
+/* The following 3 blocks belong to read more button in this page. You can copy paste it to your section. Be careful with class names! */
+.catchword-form .container .box .read-more-button {
+  margin: 1rem 0;
+}
+.catchword-form .container .box .read-more-button a {
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  background-color: #bdb285;
+  padding: 15px 51px 16px 50px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+.catchword-form .container .box .read-more-button a:hover {
+  background-color: #4f6054;
+}
+.catchword-form .container .form-box form .input input,
+.catchword-form .container .form-box form .input textarea {
+  width: 100%;
+  padding: 14px 12px;
+  border-color: #f2f2f2;
+  border-radius: 30px;
+  color: #f2f2f2;
+  outline: none;
+  font-size: 1rem;
+}
+.catchword-form .container .form-box form .input,
+.catchword-form .container .form-box form .checkbox {
+  margin-bottom: 1.2rem;
+}
+.catchword-form .container .form-box form .input textarea {
+  resize: none;
+  height: 7rem;
+}
+.catchword-form .container .form-box form .checkbox label a,
+.catchword-form .container .form-box form .checkbox label a:visited {
+  color: #adcce9;
+}
+.catchword-form .container .form-box form .checkbox label a:hover {
+  color: #a1a1a1;
+}
+.catchword-form .container .form-box form .submit-button {
+  margin-bottom: 1.5rem;
+}
+.catchword-form .container .form-box form .submit-button button {
+  width: 100%;
+  background-color: #bdb285;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.catchword-form .container .form-box form .submit-button button:hover {
+  background-color: #fff;
+  color: #4f6054;
+}
+/* Talha: Form part. The section before the footer. END */
+
+/* Animation that slides texts */
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideFromLeft-part9 {
+  0% {
+    transform: translateX(-600px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/*animation for quotation mark*/
+@keyframes iconExpand {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Animation for text visibility*/
+@keyframes visibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 1250px) {
+  html {
+    font-size: 14px;
+  }
+  .catchword-form .container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 12px;
+  }
+  .part3 {
+    margin-bottom: 700px;
+  }
+  .part3 .box-container {
+    grid-template-columns: repeat(2, 45%);
+    row-gap: 20px;
+  }
+  .catchword-form .container {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .part8 .svg-box {
+    width: 70vw;
+    margin-bottom: 100px;
+  }
+  .part9 .main {
+    grid-template-columns: 90%;
+    gap: 20px;
+    text-align: center;
+  }
+  .part9 .main .textWrapper {
+    text-align: left;
+  }
+  .part9 .main .smartPhonePic img {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .part10 .main-container .text-wrapper {
+    margin-right: 10%;
+  }
+  .catchword-form .container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .catchword-form .container {
+    grid-template-columns: 80%;
+    justify-content: center;
+    gap: 50px;
+  }
+  .part4 .svg-box {
+    height: 33vh;
+  }
+  .part6 .svg-box {
+    height: 30vh;
+  }
+  .part7 .container .title {
+    font-size: 1.5rem;
+  }
+  .part7 .container .boxes .box {
+    height: 150px;
+  }
+  .part7 .container .boxes .box .text {
+    font-size: 0.8rem;
+  }
+  .part7 .container .boxes .box .tick img {
+    width: 20px;
+  }
+
+  .part8 .svg-box .firstSvg {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 8px;
+  }
+  .part3 {
+    margin-bottom: 1500px;
+  }
+
+  .part3 .box-container {
+    grid-template-columns: 100%;
+  }
+  .part4 .svg-box {
+    height: 25vh;
+  }
+  .part4 .benefits-section {
+    width: 80%;
+    min-width: 50px;
+  }
+  .part6 .network-section {
+    width: 90%;
+  }
+  .part6 .svg-box {
+    height: 20vh;
+  }
+
+  .part6 .svg-box .firstSvg {
+    fill: #4f6054;
+    width: 80%;
+  }
+  .part7 .container .boxes {
+    grid-template-columns: 90%;
+  }
+  .part7 {
+    height: 100%;
+  }
+  .part7 .container .title {
+    font-size: 1.5rem;
+  }
+  .part7 .container .boxes .box {
+    height: 120px;
+  }
+  .part7 .container .boxes .box .text {
+    font-size: 1rem;
+  }
+  .part8 .svg-box .firstSvg {
+    width: 60%;
+  }
+  .part8 .network-article {
+    width: 100%;
+  }
+}
+
+/*Footer Melike*/
+#codersBox {
+  background-color: rgb(79, 96, 84);
+  width: 50%;
+  max-width: 500px;
+  min-width: 300px;
+  height: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1rem;
+  border: 2px solid #d7d1d1;
+  z-index: 1000;
+  color: #d7d1d1;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+#codersBox h1 {
+  font-size: 2.2rem;
+}
+#codersBox a {
+  color: #f2f2f2;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+#codersBox li a:hover {
+  color: rgb(178, 176, 176);
+}
+#codersBox ul li {
+  list-style: none;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+#codersBox.active {
+  visibility: visible;
+  opacity: 1;
+}
+footer {
+  background-color: #333333;
+  height: 220px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer .copyright {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #259bca;
+  transition: color 0.5s;
+}
+footer .copyright:hover {
+  color: rgba(37, 155, 202, 60%);
+}
