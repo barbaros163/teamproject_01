@@ -15,18 +15,19 @@ close.addEventListener("click", () => {
   bgFilter.classList.remove("active");
 });
 
-document.addEventListener("keyup", (e) => {
-  if (e.key == "Escape") {
-    navbar.classList.remove("active");
-    bgFilter.classList.remove("active");
-    codersBox.classList.remove("active");
-  }
-});
-
-bgFilter.addEventListener("click", () => {
+const rmFilter = () => {
   navbar.classList.remove("active");
   bgFilter.classList.remove("active");
   codersBox.classList.remove("active");
+};
+
+document.addEventListener("keyup", (e) => {
+  if (e.key == "Escape") {
+    rmFilter();
+  }
+});
+bgFilter.addEventListener("click", () => {
+  rmFilter();
 });
 
 copyright.addEventListener("click", () => {

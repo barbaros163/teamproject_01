@@ -10,6 +10,9 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif;
 */
+html {
+  scroll-behavior: smooth;
+}
 
 /* part1 Melike */
 nav {
@@ -21,6 +24,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   color: white;
+  position: fixed;
+  z-index: 3;
 }
 nav .hamburger {
   cursor: pointer;
