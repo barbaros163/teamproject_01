@@ -21,13 +21,14 @@ A passionate Full-Stack developer from Anatolien
 
 
 
-# Bootstrap Web Page
-Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first sites, with a template starter page.
+# Teamproject 1
+
+Successful Industrial Company HTML Template
 
 
 
 ## 🛠 Skills
-HTML, CSS, Bootstrap
+HTML, CSS, Javascript
 
 
 ## Demo
