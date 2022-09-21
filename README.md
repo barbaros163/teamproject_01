@@ -1,30 +1,33 @@
 
-# Teamproject_1
+# Hi, I'm Yasin! 👋
 
-Successful Industrial Company HTML Template
+
+## 🚀 About Me
+A passionate Full-Stack developer from Anatolien
 
 
 ## Authors
 
 
-- [@Sinan Sarikaya](https://github.com/sinansarikaya)
-- [@James Webb](https://github.com/ndryld)
-- [@Mehmet FK](https://github.com/HaciGustav)
-- [@Melih](https://github.com/F4372-Melih)
-- [@A.Talha Ercan](https://github.com/ATErcan)
-- [@Halil Özcan](https://github.com/H02c4n)
-- [@Müjgan Melike](https://github.com/mujganmelike)
-- [@Kemal Karabulut](https://github.com/Kemal-byte)
-- [@Me](https://github.com/barbaros163)
+- [Sinan Sarikaya](https://github.com/sinansarikaya)
+- [James Webb](https://github.com/ndryld)
+- [Mehmet FK](https://github.com/HaciGustav)
+- [Melih](https://github.com/F4372-Melih)
+- [A.Talha Ercan](https://github.com/ATErcan)
+- [Halil Özcan](https://github.com/H02c4n)
+- [Müjgan Melike](https://github.com/mujganmelike)
+- [Kemal Karabulut](https://github.com/Kemal-byte)
+- [Yasin Yavuz](https://github.com/barbaros163)
+
+
+
+# Bootstrap Web Page
+Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first sites, with a template starter page.
 
 
 
 ## 🛠 Skills
-Javascript, HTML, CSS
-
-
-## 🚀 About Me
-A passionate Full-Stack developer from Anatolien
+HTML, CSS, Bootstrap
 
 
 ## Demo
