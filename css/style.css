@@ -9,6 +9,7 @@ font-family: 'Courier Prime', monospace;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif;
+font-family: 'Signika', sans-serif;
 */
 html {
   scroll-behavior: smooth;
@@ -26,6 +27,10 @@ nav {
   color: white;
   position: fixed;
   z-index: 3;
+}
+nav .logo {
+  font-size: 2rem;
+  font-family: "Signika", sans-serif;
 }
 nav .hamburger {
   cursor: pointer;
@@ -347,7 +352,7 @@ nav .hamburger:hover .bar {
 }
 .part4 .benefits-article .benefits-description {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 2rem;
   color: #111;
 }
@@ -499,8 +504,8 @@ nav .hamburger:hover .bar {
 }
 .part6 .network-article .network-description {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.2rem;
-  line-height: 2rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
   color: #111;
 }
 .part6 .network-article .network-button {
@@ -571,7 +576,7 @@ nav .hamburger:hover .bar {
 }
 .part7 .container .boxes .box .text {
   width: 90%;
-  font-size: 1rem;
+  font-size: 2rem;
   display: flex;
   text-align: left;
   align-items: center;
@@ -646,7 +651,7 @@ nav .hamburger:hover .bar {
 }
 .part8 .network-article .network-description {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 2rem;
   /* padding: 2rem 0; */
   color: #111;
@@ -717,9 +722,10 @@ nav .hamburger:hover .bar {
   max-width: 100%;
   background-image: url(../img/pexels-photo-4307641.jpeg);
   background-size: cover;
-  background-position: center;
+  background-position: left;
   display: flex;
   justify-content: flex-end;
+  padding-left: 2rem;
 }
 .part10 .main-container .text-wrapper {
   max-width: 538px;
@@ -927,6 +933,9 @@ footer .copyright {
 footer .copyright:hover {
   color: rgba(37, 155, 202, 60%);
 }
+footer .footerInfo img {
+  max-width: 20rem;
+}
 
 /* Animation that slides texts */
 @keyframes slideFromLeft {
@@ -1004,6 +1013,13 @@ footer .copyright:hover {
   .u-container-content h2 {
     font-size: 4rem;
   }
+  .part6 .svg-box {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+  .part6 .svg-box .svgImg {
+    width: 100%;
+  }
   .part8 .svg-box {
     width: 70vw;
     margin-bottom: 100px;
@@ -1049,6 +1065,10 @@ footer .copyright:hover {
   .part4 .svg-box {
     height: 33vh;
   }
+  .part4 .svg-box .svgImg {
+    width: 100%;
+    left: 0;
+  }
   .part6 .svg-box {
     height: 30vh;
   }
@@ -1087,6 +1107,7 @@ footer .copyright:hover {
   }
   .part4 .svg-box {
     height: 25vh;
+    margin-bottom: 5rem;
   }
   .part4 .benefits-section {
     width: 80%;
@@ -1096,7 +1117,11 @@ footer .copyright:hover {
     width: 90%;
   }
   .part6 .svg-box {
-    height: 20vh;
+    width: 70%;
+    margin-bottom: 10rem;
+  }
+  .part6 .svg-box .svgImg {
+    left: 0;
   }
   .part6 .svg-box .firstSvg {
     fill: #4f6054;
@@ -1135,6 +1160,13 @@ footer .copyright:hover {
   .u-container {
     width: 90%;
   }
+  .part4 .svg-box {
+    width: 80vw;
+  }
+  .part6 .svg-box {
+    margin-bottom: 2rem;
+  }
+
   .part8 .network-article .network-button {
     padding: 15px 30px;
   }
@@ -1143,5 +1175,8 @@ footer .copyright:hover {
   .u-image {
     width: 150px;
     height: 150px;
+  }
+  .part6 .svg-box .svgImg {
+    margin-bottom: 0;
   }
 }
